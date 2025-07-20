@@ -1,0 +1,387 @@
+/Volumes/sequoia
+├── Applications
+│   ├── Adobe Acrobat DC
+│   ├── Adobe Aero 2022 (Beta)
+│   ├── Adobe After Effects 2024
+│   ├── Adobe After Effects 2025
+│   ├── Adobe Animate 2024
+│   ├── Adobe Audition 2024
+│   ├── Adobe Audition 2025
+│   ├── Adobe Bridge 2024
+│   ├── Adobe Bridge 2025
+│   ├── Adobe Character Animator 2024
+│   ├── Adobe Character Animator 2025
+│   ├── Adobe Creative Cloud
+│   ├── Adobe Digital Editions 4.5.app
+│   ├── Adobe Digital Editions.app -> /Applications/Adobe Digital Editions 4.5.app
+│   ├── Adobe Dimension
+│   ├── Adobe Dreamweaver 2021
+│   ├── Adobe Illustrator 2024
+│   ├── Adobe Illustrator 2025
+│   ├── Adobe InCopy 2024
+│   ├── Adobe InCopy 2025
+│   ├── Adobe InDesign 2024
+│   ├── Adobe InDesign 2025
+│   ├── Adobe Lightroom CC
+│   ├── Adobe Lightroom Classic
+│   ├── Adobe Media Encoder 2024
+│   ├── Adobe Media Encoder 2025
+│   ├── Adobe Photoshop 2024
+│   ├── Adobe Photoshop 2025
+│   ├── Adobe Premiere Pro 2024
+│   ├── Adobe Premiere Pro 2025
+│   ├── Adobe Premiere Rush 2.0
+│   ├── Adobe UXP Developer Tools
+│   ├── Adobe XD
+│   ├── AI-Navigator.app
+│   ├── Amazon Kindle.app
+│   ├── Anaconda-Navigator.app -> /opt/anaconda3/Anaconda-Navigator.app
+│   ├── Azure Data Studio.app
+│   ├── Blackmagic Disk Speed Test.app
+│   ├── Blender.app
+│   ├── Brave Browser.app
+│   ├── CCleaner.app
+│   ├── ChatGPT.app
+│   ├── Claude.app
+│   ├── Cluely.app
+│   ├── CopyClip.app
+│   ├── Cursor.app
+│   ├── Datasette.app
+│   ├── Developer.app
+│   ├── Discord.app
+│   ├── Disk Drill.app
+│   ├── DNSMonitor.app
+│   ├── Docker.app
+│   ├── Dyalog-18.2.app
+│   ├── Emacs.app
+│   ├── Epic Games Launcher.app
+│   ├── eul.app
+│   ├── Fiddler Everywhere.app
+│   ├── FileMonitor.app
+│   ├── Firefox.app
+│   ├── GarageBand.app
+│   ├── GeForceNOW.app
+│   ├── GeoGebra Classic 6.app
+│   ├── GitHub Desktop.app
+│   ├── Google Chrome.app
+│   ├── Google Docs.app
+│   ├── Google Drive.app
+│   ├── Google Sheets.app
+│   ├── Google Slides.app
+│   ├── GoToMeeting.app
+│   ├── Horos.app
+│   ├── iMovie.app
+│   ├── Julia-1.9.app
+│   ├── Keynote.app
+│   ├── Kindle.app
+│   ├── kitty.app
+│   ├── KNIME 5.4.1.app
+│   ├── LangGraph Studio.app
+│   ├── Liner Workspace.app
+│   ├── LTspice.app
+│   ├── Macs Fan Control.app
+│   ├── Magnet.app
+│   ├── Malwarebytes.app
+│   ├── Mathpix Snipping Tool.app
+│   ├── Maxon Cinema 4D 2023
+│   ├── Maxon Cinema 4D 2024
+│   ├── Maxon Cinema 4D 2025
+│   ├── Mendeley Reference Manager.app
+│   ├── Messenger.app
+│   ├── miApps
+│   ├── Microsoft Edge.app
+│   ├── Microsoft Excel.app
+│   ├── Microsoft OneNote.app
+│   ├── Microsoft Outlook.app
+│   ├── Microsoft PowerPoint.app
+│   ├── Microsoft Teams.app
+│   ├── Microsoft Word.app
+│   ├── mymind.app
+│   ├── NeoHtop.app
+│   ├── Netiquette.app
+│   ├── ngrok
+│   ├── Numbers.app
+│   ├── NVIDIA AI Workbench.app
+│   ├── Ollama.app
+│   ├── OneDrive.app
+│   ├── OpenBB Terminal
+│   ├── Pages.app
+│   ├── Parallels Desktop.app
+│   ├── Parallels Toolbox.app
+│   ├── PDFExtractor.app
+│   ├── Perplexity.app
+│   ├── Poe.app
+│   ├── Prime Video.app
+│   ├── ProcessMonitor.app
+│   ├── Qfinder Pro.app
+│   ├── R.app
+│   ├── RemotePlay.app
+│   ├── Repo Prompt.app
+│   ├── RepoPrompt.app
+│   ├── Safari.app -> ../System/Cryptexes/App/System/Applications/Safari.app
+│   ├── Signal.app
+│   ├── SiteSucker.app
+│   ├── Slack.app
+│   ├── Slicer.app
+│   ├── Sloth.app
+│   ├── Speedtest.app
+│   ├── Steam.app
+│   ├── Stellarium.app
+│   ├── Suspicious Package.app
+│   ├── Swift Playground.app
+│   ├── Tableau Desktop 2024.1.app
+│   ├── Telegram.app
+│   ├── TestFlight.app
+│   ├── TeX
+│   ├── Thunderbird.app
+│   ├── Transmission
+│   ├── Unity
+│   ├── Unity Hub.app
+│   ├── Unraid USB Creator.app
+│   ├── Utilities
+│   ├── VirtualBox.app
+│   ├── VLC.app
+│   ├── Warp.app
+│   ├── Webex.app
+│   ├── WezTerm.app
+│   ├── WhatsApp.app
+│   ├── WhatsApp.localized
+│   ├── WhatsYourSign.app
+│   ├── WiFi Explorer.app
+│   ├── Windows App.app
+│   ├── Windsurf.app
+│   ├── Wireshark.app
+│   ├── WolframScript.app
+│   ├── Xamarin Profiler.app
+│   ├── Xcode.app
+│   ├── Xmind.app
+│   ├── Zenmap.app
+│   ├── zoom.us.app
+│   └── Zotero.app
+├── bin
+│   ├── [
+│   ├── bash
+│   ├── cat
+│   ├── chmod
+│   ├── cp
+│   ├── csh
+│   ├── dash
+│   ├── date
+│   ├── dd
+│   ├── df
+│   ├── echo
+│   ├── ed
+│   ├── expr
+│   ├── hostname
+│   ├── kill
+│   ├── ksh
+│   ├── launchctl
+│   ├── link
+│   ├── ln
+│   ├── ls
+│   ├── mkdir
+│   ├── mv
+│   ├── pax
+│   ├── ps
+│   ├── pwd
+│   ├── realpath
+│   ├── rm
+│   ├── rmdir
+│   ├── sh
+│   ├── sleep
+│   ├── stty
+│   ├── sync
+│   ├── tcsh
+│   ├── test
+│   ├── unlink
+│   ├── wait4path
+│   └── zsh
+├── cores
+├── dev
+├── etc -> private/etc
+├── Library
+│   ├── Apple
+│   ├── Application Support
+│   ├── AppStore
+│   ├── Audio
+│   ├── Automator
+│   ├── Bluetooth
+│   ├── Caches
+│   ├── ColorPickers
+│   ├── ColorSync
+│   ├── Components
+│   ├── Compositions
+│   ├── Contextual Menu Items
+│   ├── CoreAnalytics
+│   ├── CoreMediaIO
+│   ├── Developer
+│   ├── DirectoryServices
+│   ├── Documentation
+│   ├── DriverExtensions
+│   ├── Extensions
+│   ├── Filesystems
+│   ├── Fonts
+│   ├── Frameworks
+│   ├── Google
+│   ├── GPUBundles
+│   ├── Graphics
+│   ├── Image Capture
+│   ├── Input Methods
+│   ├── InstallerSandboxes
+│   ├── Internet Plug-Ins
+│   ├── Java
+│   ├── KernelCollections
+│   ├── Keyboard Layouts
+│   ├── Keychains
+│   ├── LaunchAgents
+│   ├── LaunchDaemons
+│   ├── Logs
+│   ├── Mathematica
+│   ├── Microsoft
+│   ├── OpenDirectory
+│   ├── OSAnalytics
+│   ├── Parallels
+│   ├── PDF Services
+│   ├── Perl
+│   ├── PreferencePanes
+│   ├── Preferences
+│   ├── Printers
+│   ├── PrivilegedHelperTools
+│   ├── QuickLook
+│   ├── Receipts
+│   ├── Ruby
+│   ├── Sandbox
+│   ├── Screen Savers
+│   ├── ScriptingAdditions
+│   ├── Scripts
+│   ├── Security
+│   ├── Speech
+│   ├── StagedDriverExtensions
+│   ├── StagedExtensions
+│   ├── StartupItems
+│   ├── SystemExtensions
+│   ├── SystemMigration
+│   ├── SystemProfiler
+│   ├── TeX
+│   ├── Trial
+│   ├── Updates
+│   ├── User Pictures
+│   ├── User Template
+│   ├── Video
+│   ├── WebServer
+│   └── Wolfram
+├── opt
+│   ├── anaconda3
+│   ├── osquery
+│   ├── R
+│   └── X11
+├── private
+│   ├── etc
+│   ├── tftpboot
+│   ├── tmp
+│   └── var
+├── sbin
+│   ├── apfs_hfs_convert -> ../System/Library/Filesystems/apfs.fs/Contents/Resources/hfs_convert
+│   ├── apfs_unlockfv
+│   ├── disklabel
+│   ├── dmesg
+│   ├── dynamic_pager
+│   ├── fibreconfig
+│   ├── fsck
+│   ├── fsck_apfs -> ../System/Library/Filesystems/apfs.fs/Contents/Resources/fsck_apfs
+│   ├── fsck_cs
+│   ├── fsck_exfat -> /System/Library/Filesystems/exfat.fs/Contents/Resources/fsck_exfat
+│   ├── fsck_fskit
+│   ├── fsck_hfs -> /System/Library/Filesystems/hfs.fs/Contents/Resources/fsck_hfs
+│   ├── fsck_msdos -> /System/Library/Filesystems/msdos.fs/Contents/Resources/fsck_msdos
+│   ├── fsck_udf -> /System/Library/Filesystems/udf.fs/Contents/Resources/fsck_udf
+│   ├── fstyp
+│   ├── fstyp_hfs
+│   ├── fstyp_msdos
+│   ├── fstyp_ntfs
+│   ├── fstyp_udf
+│   ├── halt
+│   ├── ifconfig
+│   ├── kextload
+│   ├── kextunload
+│   ├── launchd
+│   ├── md5
+│   ├── md5sum
+│   ├── mknod
+│   ├── mount
+│   ├── mount_9p
+│   ├── mount_acfs -> /System/Library/Filesystems/acfs.fs/Contents/bin/redirection.sh
+│   ├── mount_afp
+│   ├── mount_apfs -> ../System/Library/Filesystems/apfs.fs/Contents/Resources/mount_apfs
+│   ├── mount_cd9660 -> /System/Library/Filesystems/cd9660.fs/Contents/Resources/mount_cd9660
+│   ├── mount_cddafs -> /System/Library/Filesystems/cddafs.fs/Contents/Resources/mount_cddafs
+│   ├── mount_devfs
+│   ├── mount_exfat -> /System/Library/Filesystems/exfat.fs/Contents/Resources/mount_exfat
+│   ├── mount_fdesc
+│   ├── mount_ftp -> /System/Library/Filesystems/ftp.fs/Contents/Resources/mount_ftp
+│   ├── mount_hfs -> /System/Library/Filesystems/hfs.fs/Contents/Resources/mount_hfs
+│   ├── mount_msdos -> /System/Library/Filesystems/msdos.fs/Contents/Resources/mount_msdos
+│   ├── mount_nfs
+│   ├── mount_smbfs
+│   ├── mount_tmpfs -> ../System/Library/Filesystems/tmpfs.fs/Contents/Resources/mount_tmpfs
+│   ├── mount_udf -> /System/Library/Filesystems/udf.fs/Contents/Resources/mount_udf
+│   ├── mount_virtiofs -> ../System/Library/Filesystems/virtiofs.fs/Contents/Resources/mount_virtiofs
+│   ├── mount_webdav
+│   ├── mpioutil
+│   ├── newfs_apfs -> ../System/Library/Filesystems/apfs.fs/Contents/Resources/newfs_apfs
+│   ├── newfs_exfat -> /System/Library/Filesystems/exfat.fs/Contents/Resources/newfs_exfat
+│   ├── newfs_fskit
+│   ├── newfs_hfs -> /System/Library/Filesystems/hfs.fs/Contents/Resources/newfs_hfs
+│   ├── newfs_msdos -> /System/Library/Filesystems/msdos.fs/Contents/Resources/newfs_msdos
+│   ├── newfs_udf -> /System/Library/Filesystems/udf.fs/Contents/Resources/newfs_udf
+│   ├── nfsd
+│   ├── nfsiod
+│   ├── nologin
+│   ├── pfctl
+│   ├── ping
+│   ├── ping6
+│   ├── quotacheck
+│   ├── reboot
+│   ├── route
+│   ├── sha1
+│   ├── sha1sum
+│   ├── sha224
+│   ├── sha224sum
+│   ├── sha256
+│   ├── sha256sum
+│   ├── sha384
+│   ├── sha384sum
+│   ├── sha512
+│   ├── sha512sum
+│   ├── shutdown
+│   └── umount
+├── System
+│   ├── Applications
+│   ├── Cryptexes
+│   ├── Developer
+│   ├── DriverKit
+│   ├── iOSSupport
+│   ├── Library
+│   └── Volumes
+├── tmp -> private/tmp
+├── Users
+│   ├── aaa
+│   ├── models
+│   ├── mrg
+│   └── walkerjian
+├── usr
+│   ├── bin
+│   ├── lib
+│   ├── libexec
+│   ├── local
+│   ├── sbin
+│   ├── share
+│   ├── standalone
+│   ├── X11 -> ../private/var/select/X11
+│   └── X11R6 -> ../private/var/select/X11
+├── var -> private/var
+└── Volumes
+    ├── psyclops
+    └── sequoia -> /
+
+268 directories, 117 files

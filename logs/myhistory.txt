@@ -1,0 +1,819 @@
+    1  ioreg -lw0 | grep -i IODisplayEDID | sed '/[^<]*</s///' | xxd -p -r | strings -6\n
+    2  ioreg -lw0 -r -n IODisplayConnect | grep -E "IODisplayEDID|DisplayProductID|DisplayVendorID"\n
+    3  system_profiler SPDisplaysDataType\n
+    4  ioreg -lw0 | grep -A20 IODisplayPrefsKey\n
+    5  sudo ioreg -lw0 | grep -A20 IODisplayPrefsKey\n
+    6  open -a "Simulator"\n
+    7  system_profiler SPDisplaysDataType\n
+    8  xcrun simctl io booted screenshot vision_display.png\n
+    9  system_profiler SPDisplaysDataType\n
+   10  pwd
+   11  md dev
+   12  mkdir dev
+   13  cd dev
+   14  mkdir src
+   15  cd src
+   16  git clone https://github.com/ggerganov/llama.cpp.git\n
+   17  cd llama.cpp
+   18  make LLAMA_METAL=1\n
+   19  mkdir build
+   20  cd build
+   21  cmake .. -DLLAMA_METAL=on\n
+   22  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\n
+   23  brew install cmake\n
+   24  cat > hyperfluffy.txt
+   25  ollama pull deepseek-coder:latest\n
+   26  brew services start ollama\n
+   27  ollama pull deepseek-coder:latest\n
+   28  ollama pull deepseek-coder:latest\n
+   29  ollama pull qwen:7b\n
+   30  ollama pull qwen:7b\n
+   31  ollama pull qwen:7b\n
+   32  OLLAMA_MODELS=/Volumes/sequoia/Users/walkerjian/llm ollama run qwen:7b\n
+   33  cat > quen.txt
+   34  ollama pull mixtral:latest\n
+   35  ollama pull mixtral:latest\n
+   36  ollama pull mixtral:latest\n
+   37  brew install cmake\n
+   38  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\n
+   39  echo >> /Users/ian/.zprofile
+   40  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ian/.zprofile
+   41  eval "$(/opt/homebrew/bin/brew shellenv)"
+   42  brew help
+   43  brew install cmake\n
+   44  cd ~/dev/src/llama.cpp\n
+   45  cd build
+   46  cmake --build . --config Release
+   47  cmake .. -DLLAMA_METAL=on\n
+   48  cmake --build . --config Release
+   49  ~/dev/src/llama.cpp/build/bin/main --help\n
+   50  ~/dev/src/llama.cpp/build/bin/llama-cli --help\n
+   51  ~/dev/src/llama.cpp/build/bin/main \\n  -m ~/models/llama/tinyllama-1.1b-chat-v1.0.Q4_0.gguf \\n  -p "Explain what a black hole is in full academic rigor." \\n  -ngl 1\n
+   52  ~/dev/src/llama.cpp/build/bin/llama-cli \\n  -m ~/models/llama/tinyllama-1.1b-chat-v1.0.Q4_0.gguf \\n  -p "Explain what a black hole is in full academic rigor." \\n  -ngl 1\n
+   53  mkdir -p ~/models/llama\n
+   54  cd ~/models/llama\n
+   55  curl -L -O https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_0.gguf\n
+   56  open -a Xcode ~/.zshrc\n
+   57  ls -lash ~
+   58  touch ~/.zshrc\n
+   59  open -a Xcode ~/.zshrc\n
+   60  source ~/.zshrc\n
+   61  llama \\n  -m ~/models/llama/tinyllama-1.1b-chat-v1.0.Q4_0.gguf \\n  -p "Explain what a black hole is in full academic rigor." \\n  -ngl 1\n
+   62  ls /Volumes\n
+   63  find /Volumes/sequoia -name "*.gguf"\n
+   64  alias speedy-llama='~/dev/src/llama.cpp/build/bin/llama-cli \\n  -m /Volumes/sequoia/Users/walkerjian/bck/iMac\ 27/dev/llm/BitNet/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \\n  -ngl 1 \\n  -p'
+   65  alias sllama='~/dev/src/llama.cpp/build/bin/llama-cli \\n  -m /Volumes/sequoia/Users/walkerjian/bck/iMac\ 27/dev/llm/BitNet/models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf \\n  -ngl 1 \\n  -p'
+   66  sllama "make me one with everything"
+   67  pip3 install huggingface_hub\n
+   68  cd /Volumes/sequoia/models/llama\n
+   69  cd /Volumes/sequoia
+   70  ls
+   71  cd users
+   72  ls
+   73  cd walkerjian
+   74  ls
+   75  cd dev
+   76  ls
+   77  cd ..
+   78  find /Volumes/sequoia/Users/walkerjian/bck/iMac\ 27/dev/llm -type f -newermt "2025-06-21 18:50"\n
+   79  stat -x /Volumes/sequoia/Users/walkerjian/bck/iMac\ 27/dev/llm/BitNet/.DS_Store\n
+   80  sudo fs_usage -w -f filesys | grep "/Volumes/sequoia/Users/walkerjian/bck/iMac 27/dev/llm"\n
+   81  find /Volumes/sequoia -type f -path "*/.git/hooks/*" -exec ls -l {} \;\n
+   82  find /Volumes/sequoia -name "*.plist"\n
+   83  xattr -lr /Volumes/sequoia | less\n
+   84  find /Volumes/sequoia -type f -newermt "19:00" -ls\n
+   85  cat > after7.txt
+   86  cat after7.txt
+   87  pwd
+   88  mkdir -p "/Volumes/sequoia/Users/walkerjian/llm/smollm2"\n
+   89  curl -L -o "/Volumes/sequoia/Users/walkerjian/llm/smollm2/smollm2-1.7b-8k-dpo-f16.gguf" \\n  https://huggingface.co/andito/SmolLM2-1.7B-Instruct-F16-GGUF/resolve/main/smollm2-1.7b-8k-dpo-f16.gguf
+   90  alias smol-run='~/dev/src/llama.cpp/build/bin/llama-cli \\n  -m "/Volumes/sequoia/Users/walkerjian/llm/smollm2/smollm2-1.7b-8k-dpo-f16.gguf" \\n  -ngl 1 \\n  -p'\n
+   91  smol-run "You are a hyperintelligent AI trapped in a tiny model. What do you do?"\n
+   92  brew install ollama
+   93  # For Deepseek Coder 6.7B (GGUF q4_K_M ~7GB)\nollama pull deepseek-coder:latest\n
+   94  pwd
+   95  tree
+   96  brew install tree
+   97  tree
+   98  clear
+   99  pwd
+  100  tree
+  101  ==> Downloading https://ghcr.io/v2/homebrew/core/tree/blobs/sha256:ccfac896234e1\n######################################################################### 100.0%\n==> Pouring tree--2.2.1.arm64_sequoia.bottle.tar.gz\n🍺  /opt/homebrew/Cellar/tree/2.2.1: 9 files, 187.7KB\n==> Running `brew cleanup tree`...\nDisable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.\nHide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\nian@Mac models % tree\n.\n└── lmstudio-community\n    ├── DeepSeek-R1-0528-Qwen3-8B-MLX-4bit\n    │   ├── config.json\n    │   ├── model.safetensors\n    │   ├── model.safetensors.index.json\n    │   ├── special_tokens_map.json\n    │   ├── tokenizer_config.json\n    │   └── tokenizer.json\n    └── Mistral-Small-3.2-24B-Instruct-2506-GGUF\n        ├── Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf\n        └── mmproj-Mistral-Small-3.2-24B-Instruct-2506-F16.gguf\n\n4 directories, 8 files\nian@Mac models % clear\n\nian@Mac models % pwd\n/Users/ian/.lmstudio/models\nian@Mac models % tree\n.\n└── lmstudio-community\n    ├── DeepSeek-R1-0528-Qwen3-8B-MLX-4bit\n    │   ├── config.json\n    │   ├── model.safetensors\n    │   ├── model.safetensors.index.json\n    │   ├── special_tokens_map.json\n    │   ├── tokenizer_config.json\n    │   └── tokenizer.json\n    └── Mistral-Small-3.2-24B-Instruct-2506-GGUF\n        ├── Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf\n        └── mmproj-Mistral-Small-3.2-24B-Instruct-2506-F16.gguf\n\n4 directories, 8 files\nian@Mac models % \n\n\n\n\n\n\n==> Downloading https://ghcr.io/v2/homebrew/core/tree/blobs/sha256:ccfac896234e1\n######################################################################### 100.0%\n==> Pouring tree--2.2.1.arm64_sequoia.bottle.tar.gz\n🍺  /opt/homebrew/Cellar/tree/2.2.1: 9 files, 187.7KB\n==> Running `brew cleanup tree`...\nDisable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.\nHide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\nian@Mac models % tree\n.\n└── lmstudio-community\n    ├── DeepSeek-R1-0528-Qwen3-8B-MLX-4bit\n    │   ├── config.json\n    │   ├── model.safetensors\n    │   ├── model.safetensors.index.json\n    │   ├── special_tokens_map.json\n    │   ├── tokenizer_config.json\n    │   └── tokenizer.json\n    └── Mistral-Small-3.2-24B-Instruct-2506-GGUF\n        ├── Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf\n        └── mmproj-Mistral-Small-3.2-24B-Instruct-2506-F16.gguf\n\n4 directories, 8 files\nian@Mac models % clear\n\nian@Mac models % pwd\n/Users/ian/.lmstudio/models\nian@Mac models % tree\n.\n└── lmstudio-community\n    ├── DeepSeek-R1-0528-Qwen3-8B-MLX-4bit\n    │   ├── config.json\n    │   ├── model.safetensors\n    │   ├── model.safetensors.index.json\n    │   ├── special_tokens_map.json\n    │   ├── tokenizer_config.json\n    │   └── tokenizer.json\n    └── Mistral-Small-3.2-24B-Instruct-2506-GGUF\n        ├── Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf\n        └── mmproj-Mistral-Small-3.2-24B-Instruct-2506-F16.gguf\n\n4 directories, 8 files\nian@Mac models % \n\n\n\n\n\n\n
+  102    mkdir -p lmstudio/huggingface-co/smollm2-1.7b-8k-dpo\n
+  103    mkdir -p lmstudio/microsoft/phi-4\n
+  104    mkdir -p lmstudio/bitnet/bitnet-b1.58-2b\n
+  105  ls -lash
+  106  cd ..
+  107  ls -lash
+  108  pwd
+  109  history -10000 | grep mount
+  110  history
+  111  echo 'alias sequoia-rw="sudo mount -uw /Volumes/sequoia"' >> ~/.zshrc\n
+  112  source ~/.zshrc
+  113  sequoia-rw
+  114  cd sequoia
+  115  cd /Volumes/sequoia
+  116  ls
+  117  rm models
+  118  sudo mount -uw /Volumes/sequoia\n
+  119  sudo rm -rf /Volumes/sequoia/models
+  120  sudo cp  ~/.lmstudio/models /Volumes/sequoia/
+  121  sudo mv ~/.lmstudio/models /Volumes/sequoia/
+  122  ollama
+  123  ollama list
+  124  brew services stop ollama
+  125    sudo mv ~/.ollama/models /Volumes/sequoia/models/ollama
+  126    echo 'export OLLAMA_MODELS="/Volumes/sequoia/models/ollama"' >> ~/.zshrc\n
+  127    source ~/.zshrc\n
+  128    brew services start ollama\n
+  129  ollama list
+  130  cat ~/.zshrc
+  131  cd /Volumes/sequoia
+  132  ls
+  133  cd models
+  134  ls
+  135  clear
+  136  pwd
+  137  cd ollam
+  138  cd ollama
+  139  tree
+  140  pwd
+  141  cd models
+  142  pwd
+  143  ls 
+  144  cd ..
+  145  clear
+  146  pwd
+  147  ls
+  148  cd models 
+  149  pwd
+  150  ls
+  151    sudo mv models/blobs/* blobs/ 2>/dev/null || true\n
+  152  sudo mv /Volumes/sequoia/models/ollama/models/blobs/* /Volumes/sequoia/models/ollama/blobs \n
+  153  pwd
+  154  ls
+  155  cd b
+  156  cd blobs
+  157  ls
+  158  cd ..
+  159  ls
+  160  rm -rf blobs
+  161  rm -rf ls
+  162  ls
+  163  rm -rf manifests
+  164  cd ..
+  165  ls
+  166  rm -rf models
+  167  ls
+  168  ollama
+  169  ollama list
+  170  cat ~/.zshrc
+  171  history | grep brew
+  172  history -1000 | grep brew
+  173  brew services stop ollama
+  174  brew services start ollama
+  175  ollama list
+  176  cat /.zshrc
+  177  cat ~/.zshrc
+  178  clear
+  179  echo $OLLAMA_MODELS
+  180    ollama env\n
+  181    ps aux | grep ollama\n
+  182    pkill ollama\n
+  183    ollama serve &\n
+  184    ollama list\n
+  185    ls -la ~/.ollama\n
+  186    ls -la ~/.ollama\n
+  187    ln -s /Volumes/sequoia/models/ollama ~/.ollama/models\n
+  188  brew services stop ollama
+  189  brew services start ollama
+  190  ollama list
+  191    ollama run deepseek-coder "Write a hello world in Python"\n
+  192    find / -size +1G -type f 2>/dev/null | head -20\n
+  193    find / -size +500M -type f 2>/dev/null | head -20\n
+  194    sudo du -h / 2>/dev/null | sort -hr | head -10\n
+  195    df -h\n
+  196  xcode /.zshrc
+  197  code /.zshrc
+  198  cat > claudenotes.md
+  199  cat claudenotes.md
+  200  pwd
+  201  brew install cask betterdisplay
+  202  df 
+  203  history -1000 | grep df
+  204  df -h 
+  205  brew install opencode-ai/tap/opencode
+  206  opencode -p "Explain the use of context in Go"\n
+  207  brew update
+  208  brew install ripgrep fzf
+  209  opencode -p "Explain the use of context in Go"\n
+  210  opencode
+  211  pwd
+  212  cd dev
+  213  ls
+  214  cd ~
+  215  ls -lash
+  216  code .zshrc
+  217  vs code .zshrc
+  218  vscode .zshrc
+  219  /opt/anaconda3/bin/jupyter_mac.command ; exit;
+  220  code .zshrc
+  221  vscode .zshrc
+  222  source .zshrc
+  223  source /.zshrc
+  224  pwd
+  225  source .zshrc
+  226  cat .zshrc
+  227  codex
+  228  haxelib dev hxcpp-debug-server "/Users/ian/.vscode/extensions/vshaxe.hxcpp-debugger-1.2.4/hxcpp-debug-server"
+  229  exit
+  230  alias
+  231  sequoia-rw
+  232  sequoia-rw
+  233  cd /Volumes/sequoia/models
+  234  lash
+  235  ls
+  236  md llama
+  237  mkdir llama
+  238  cp ~/models/llama/tinyllama-1.1b-chat-v1.0.Q4_0.gguf .
+  239  mv tinyllama-1.1b-chat-v1.0.Q4_0.gguf ./llama
+  240  llm
+  241  ollama 
+  242  ollama "make me one with everything"
+  243  ollama models
+  244  ollama list
+  245  ollama ps
+  246  ollama serve
+  247  which ollama
+  248  cd dev
+  249  cd me
+  250  ls
+  251  cd Documents
+  252  cd me
+  253  d dev
+  254  cd dev
+  255  cd src
+  256  gh repo clone unslothai/notebooks
+  257  ifconfig
+  258  cd /Volumes/RAMDisk\ndd if=/dev/zero of=testfile bs=1m count=10000\n
+  259  dd if=testfile of=/dev/null bs=1m\n
+  260  snmpwalk -v 2c -c public 10.0.0.1\n
+  261  nmap -sV --script=banner -T4 10.0.0.0/24\n
+  262  ifconfig
+  263  route get 192.168.1.135 | grep interface
+  264  Volumes
+  265  volumes
+  266  mount
+  267  ipconfig getifaddr en0   # On psymin
+  268  ping 10.0.0.2
+  269  ping 10.0.0.2
+  270  ping 10.0.0.2
+  271  ifconfig | grep -B5 10\.0\.
+  272  ping 10.0.0.2
+  273  ping 10.0.0.2
+  274  ping 10.0.0.2
+  275  ping 10.0.0.1
+  276  ping 10.0.0.2
+  277  ping 192.168.0.1
+  278  ping 192.168.0.86
+  279  ping 192.168.0.190
+  280  ping 8.8.8.8
+  281  history
+  282  history -1000
+  283  ping 8.8.8.8
+  284  ping 8.8.8.8
+  285  ping 192.168.0.1
+  286  ping 192.168.0.13
+  287  ping 192.168.0.190
+  288  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --getstealthmode\n
+  289  sudo route -n flush\nsudo dscacheutil -flushcache\nsudo killall -HUP mDNSResponder\nsudo arp -a -d\n
+  290  ifconfig
+  291  sudo route -n flush\nsudo dscacheutil -flushcache\nsudo killall -HUP mDNSResponder\nsudo arp -a -d\n
+  292  sudo route -n flush
+  293  sudo dscacheutil -flushcache
+  294  sudo killall -HUP mDNSResponder
+  295  sudo arp -a -d
+  296  exit
+  297  ping 192.168.0.1
+  298  ping 192.168.0.190
+  299  ping 10.0.0.1
+  300  ping 10.0.0.2
+  301  ping 192,168.0.1
+  302  ping 192.168.0.1
+  303  ping 10.0.0.1
+  304  ping 10.0.0.2
+  305  ping 192.168.0.190
+  306  ping 192.168.0.13
+  307  brew
+  308  brew install iperf3
+  309  iperf3 -c 10.0.0.2  
+  310  iperf3 -c 10.0.0.2 -R 
+  311  ping 10.0.0.2
+  312  ping 10.0.0.1
+  313  ping 10.0.0.1
+  314  iperf3 -c 10.0.0.2 -R 
+  315  iperf3 -c 10.0.0.2 -R 
+  316  iperf3 -c 10.0.0.2
+  317  sudo mount -uw /Volumes/Sequoia
+  318  diskutil list
+  319  sudo diskutil unmount /Volumes/Sequoia\n
+  320  ping 10.0.0.2
+  321  brew install smartmontools
+  322  diskutil list
+  323  sudo smartctl -a /dev/disk6
+  324  rsync -avh --progress --ignore-existing /Volumes/Public/com /Volumes/sequoia/Users/billiepublic 
+  325  rsync -avh --progress --ignore-existing /Volumes/Public/com /Volumes/sequoia/Users/billiepublic
+  326  ^[[200~cd /Volumes/sequoia/Users/billiepublic
+  327  cd /Volumes/sequoia/Users/billiepublic\n
+  328  tar -C /Volumes/Public -cf - com | tar -xvf -
+  329  du -sh /Volumes/sequoia/Users/billiepublic/com
+  330  sudo du -hd 1 /Volumes/sequoia/Users/billiepublic | sort -hr | head -n 20
+  331  xattr -cr "/Volumes/Public/com/VSCode.app"
+  332  xattr -cr /Volumes/Public/com/Visual\ Studio\ Code.app 
+  333  nano .zshrc
+  334  clear
+  335  source ./zshrc
+  336  source .zshrc
+  337  zzbrs --version
+  338  zzbrs -n "/Volumes/Sequoia HD - Data/Users/me/" "/Volumes/sequoia/Users/mrg/"
+  339  zzbrs "/Volumes/Sequoia HD - Data/Users/me/" "/Volumes/sequoia/Users/mrg/"
+  340  du -sh "/Volumes/sequoia/Users/mrg"
+  341  brew install parallel
+  342  find "/Volumes/sequoia/Users/mrg" -type f -print0 \\n| parallel -0 -j 6 shasum -a 256 \\n> ~/mrg_manifest_parallel_$(date +%Y%m%d_%H%M).sha256
+  343  mount | grep /Volumes
+  344  df -h | grep /Volumes | awk '{print $9}' | xargs -I{} stat -f "Mount: %N | Type: %T" {}
+  345  df
+  346  df -H
+  347  df
+  348  diskutil unmount /Volumes/Public\n
+  349  diskutil unmount /Volumes/Public-1
+  350  mount_afp afp://admin@10.0.1.135/Public /Volumes/Public_AFP
+  351  mkdir /Volumes/Public_AFP
+  352  sudo mkdir /Volumes/Public_AFP
+  353  mount_afp afp://admin@10.0.1.135/Public /Volumes/Public_AFP
+  354  sudo rmdir /Volumes/Public_AFP
+  355  Volumes
+  356  volumes
+  357  volume
+  358  df -H
+  359  df -H
+  360  df
+  361  df
+  362  df -H
+  363  diskutil unmount /Volumes/sequoia
+  364  sudo mkdir -p /Volumes/sequoia_rw\n
+  365  sudo mount -o nobrowse,rw /dev/disk7s1 /Volumes/sequoia_rw
+  366  sudo mount -t apfs -o nobrowse,rw /dev/disk7s1 /Volumes/sequoia_rw
+  367  ls /Volumes
+  368  ls /Volumes/sequoia/models
+  369  ls /Volumes/sequoia_rw
+  370  ls /Volumes/sequoia_rw/models
+  371  sudo rm -rf /Volumes/sequoia_rw/models
+  372  ls /Volumes/sequoia_rw/models
+  373  sudo diskutil unmount /Volumes/sequoia_rw
+  374  diskutil mount disk7s1
+  375  df -H
+  376  mount | grep sequoia_rw
+  377  sudo rmdir /Volumes/sequoia_rw
+  378  mkdir -p "/Volumes/sequoia/Users/mrg"
+  379  rsync -avhEAXH --progress "/Volumes/Sequoia HD - Data/Users/billiepublic/" "/Volumes/sequoia/Users/mrg/"
+  380  brew install rsync
+  381  /opt/homebrew/bin/rsync -avhEAXH --progress "/Volumes/Sequoia HD - Data/Users/billiepublic/" "/Volumes/sequoia/Users/mrg/"
+  382  find "/Volumes/Sequoia HD - Data/Users/billiepublic" -type f | wc -l\n
+  383  find "/Volumes/sequoia/Users/mrg" -type f | wc -l
+  384  find "/Volumes/sequoia/Users/mrg" -type f -exec shasum -a 256 "{}" \; > ~/mrg_manifest_billiepublic.txt
+  385  ps -aux | grep shasum
+  386  ps -a | grep shasum
+  387  ps -a | grep shasum
+  388  lsof | grep mrg_manifest_parallel
+  389  lsof | grep mrg_manifest_parallel
+  390  wc -l mrg_manifest_parallel_*.sha256
+  391  zzbrs -n "/Users/ian/Documents/me/" "/Volumes/sequoia/Users/mrg/"
+  392  zzbrs "/Users/ian/Documents/me/" "/Volumes/sequoia/Users/mrg/"
+  393  find "/Volumes/sequoia/Users/mrg" -type f -print0 | parallel -0 -j 6 shasum -a 256 > ~/mrg_manifest_FINAL_$(date +%Y%m%d_%H%M).sha256
+  394  du -H
+  395  df -H
+  396  ls -lash
+  397  head /Users/ian/mrg_manifest_billiepublic.txt 
+  398  history -10000
+  399  find "/Users/ian/Documents/me" -type f -print0 | parallel -0 -j 6 shasum -a 256 > ~/me_manifest_$(date +%Y%m%d).sha256
+  400  ls -lash *.txt
+  401  pwd
+  402  ls
+  403  ls -l
+  404  comm -23 <(cut -d' ' -f3- ~/me_manifest_20250712.sha256 | sort) \\n         <(cut -d' ' -f3- ~/mrg_manifest_FINAL_20250712_1600.sha256 | sort)
+  405  comm -23 <(cut -d' ' -f3- ~/me_manifest_20250712.sha256 | sort)<(cut -d' ' -f3- ~/mrg_manifest_FINAL_20250712_1600.sha256 | sort)
+  406  comm -23 <(cut -d' ' -f3- ~/me_manifest_20250712.sha256 | sort) < (cut -d' ' -f3- ~/mrg_manifest_FINAL_20250712_1600.sha256 | sort)
+  407  comm -23 <(cut -d' ' -f3- ~/me_manifest_20250712.sha256 | sort) <(cut -d' ' -f3- ~/mrg_manifest_FINAL_20250712_1600.sha256 | sort)
+  408  comm -23 <(cut -d' ' -f3- ~/me_manifest_20250712.sha256 | sort) <(cut -d' ' -f3- ~/mrg_manifest_FINAL_20250712_1600.sha256 | sort) > diff.txt
+  409  rsync -avhn --delete "/Users/ian/Documents/me/" "/Volumes/Sequoia HD - Data/Users/me/"
+  410  clear
+  411  rsync -avhn --delete "/Users/ian/Documents/me/" "/Volumes/Sequoia HD - Data/Users/me/"
+  412  (base) ian@Mac ~ % rsync -avhn --delete "/Users/ian/Documents/me/" "/Volumes/Sequoia HD - Data/Users/me/"\nsending incremental file list\n./\n.DS_Store\nMovies/.DS_Store\ndeleting Music/초간단 크렘브륄레 Creme Brulee - YouTube.webloc\ndeleting Music/The Weeknd ft. ROSALÍA - Blinding Lights [Remix] (Official Lyric Video) - YouTube.webloc\nMusic/\nMusic/.DS_Store\nMusic/Audio Music Apps/Databases/Tags/\nMusic/Music/\nMusic/Music/Media.localized/Music/Unknown Artist/Unknown Album/\nPictures/\nPictures/.DS_Store\ncom/.DS_Store\ncom/bck/.DS_Store\ncom/doc/.DS_Store\ndeleting fav/Original Prusa i3 MK3S+ - Prusa3D - 3D Printers from Josef Průša.webloc\ndeleting fav/Original Prusa i3 MK3S+ - Prusa3D - 3D Printers from Josef Průša 2.webloc\ndeleting fav/CHARO - Malagueña - LIVE in Morongo Casino 12:13:2013 - YouTube.webloc\ndeleting fav/Adèle Exarchopoulos nude at DuckDuckGo.webloc\ndeleting fav/(1) Đứng Biễu Diễn Trên Sân Khấu Lớn - YouTube.webloc\nfin/.DS_Store\nfin/doc/\nfin/doc/bs/mc/\nfin/doc/bs/ns/\nfin/doc/bs/sa/\nfun/.DS_Store\nins/\nins/.DS_Store\njob/.DS_Store\npix/.DS_Store\nsci/.DS_Store\nsci/app/.DS_Store\nsci/app/CKViewers/.DS_Store\nsci/app/CKViewers/RZViewer/.DS_Store\nsci/app/CKViewers/RZViewer/files/.DS_Store\nsci/app/CKViewers/RZViewer/files/abstract L-functions/.DS_Store\nsci/app/CKViewers/RZViewer/files/abstract L-functions/Computel & Sage scripts/.DS_Store\nsci/app/CKViewers/RZViewer/files/abstract L-functions/Computel & Sage scripts/Computel/.DS_Store\nsci/app/CKViewers/RZViewer/files/abstract L-functions/Computel & Sage scripts/Computel/ap/.DS_Store\nsci/app/asteroids_atlas_of_space-main/.DS_Store\nsci/app/asteroids_atlas_of_space-main/data/.DS_Store\nsec/\nsec/.DS_Store\nsec/Craig Wright - Coming Soon.pdf\nsec/app/.DS_Store\nsec/app/dat/\nsec/app/dat/.DS_Store\nsec/bck/.DS_Store\ndeleting sec/doc/Saudi Arabia Buys Pokémon Go, and Probably All of Your Location Data.pdf\ndeleting sec/doc/Interview With Darío Gil.pdf\ndeleting sec/doc/ari/西荻窪ブリティッシュ パブ The Old Arrowのパブリカン日報.webloc\ndeleting sec/doc/ari/西荻窪しんこぺ (@shinkope_gohan) : Twitter.webloc\ndeleting sec/doc/ari/オールドアロウTavern (in西荻窪) (@The_Old_Arrow) : Twitter.webloc\ndeleting sec/doc/ari/お酒とごはん しんこぺ.webloc\ndeleting sec/doc/ari/Bong Buño on Instagram- “Check out BTS new video y’all! #bts #singularity #dancer #zoolander”.webloc\ndeleting sec/doc/ari/ap/Lesbiennes sans frontières⚕️ (@BoundMaid) : Twitter.webloc\nsec/doc/funny mail/\ndeleting sec/fav/The blade with which Sen no Rikyū committed seppuku | Markus Sesko.webloc\ndeleting sec/fav/Kampagne für politische Gefangene und deren Freilassung.webloc\ndeleting sec/fav/Craig Wright - Coming Soon.pdf\nsec/fav/\ndeleting sec/pix/EusNDfcWYAEx1lq.jpg\ndeleting sec/pix/twatter/.DS_Store\nsec/pix/\nsec/pix/.DS_Store\nsec/pix/twatter/\nsec/pix/twatter/EusNDfcWYAEx1lq.jpg\nveh/\nveh/.DS_Store\n\nsent 8.16M bytes  received 52.36K bytes  1.10M bytes/sec\ntotal size is 77.74G  speedup is 9,464.99 (DRY RUN)\n(base) ian@Mac ~ % df -H
+  413  exit
+  414  df -H
+  415  sudo find / -xdev -type f -size +500M -exec ls -lh {} \; 2>/dev/null | sort -k 5 -hr | tee ~/bigfiles_on_psymin.txt
+  416  brew install ncdu\n
+  417  sudo ncdu /
+  418  clear
+  419  exit
+  420  ^[[200~ps aux | grep Jump
+  421  ps aux | grep Jump
+  422  defaults read com.p5sys.jump.connect LicenseInfo\n
+  423  du -sh "/Volumes/Sequoia HD - Data/Users/mrg"\n
+  424  ^[[200~rsync -aHWv --no-compress --progress \\n  --exclude=".DS_Store" \\n  "/Volumes/Sequoia HD - Data/Users/mrg/" \\n  "/Volumes/Public/bck/" | tee ~/rsync-mrg-backup.log
+  425  rsync -aHWv --no-compress --progress --partial \\n  --exclude=".DS_Store" \\n  "/Volumes/Sequoia HD - Data/Users/mrg/" \\n  "/Volumes/Public/bck/" | tee ~/rsync-mrg-backup.log
+  426  rsync -nrcv --out-format="%n" "/Volumes/Sequoia HD - Data/Users/mrg/" "/Volumes/omg/" | tee ~/Desktop/missing_from_omg.txt
+  427  Q__1961:)
+  428  rsync -nrcv --out-format="%n" "/Volumes/Sequoia HD - Data/Users/mrg/" "/Volumes/omg/" | tee ~/Desktop/missing_from_omg.txt
+  429  rsync -nrcv --out-format="%n" "/Volumes/Sequoia HD - Data/Users/mrg/wrk" "/Volumes/omg/wrk" | tee ~/Desktop/missing_from_omg_wrk.txt
+  430  rsync --version
+  431  diskutil list
+  432  ps aux | grep disk
+  433  sudo lsof | grep /dev/disk4
+  434  sudo lsof | grep /dev/disk4
+  435  sudo kill -9 1430
+  436  ps aux | grep fsck
+  437  sudo kill -9 1711
+  438  ps aux | grep fsck
+  439  volumes
+  440  volume
+  441  diskutil info disk4s2
+  442  diskutil list
+  443  diskutil unmountDisk disk5
+  444  sudo dd if=/dev/rdisk5 of=/dev/null bs=1m status=progress
+  445  brew install fio
+  446  diskutil mountDisk disk5
+  447  time dd if=/dev/zero of="/Volumes/Expansion/testfile" bs=1m count=100000
+  448  rm /Volumes/Expansion/testfile
+  449  brew install ddrescue
+  450  diskutil unmount /dev/disk4s2
+  451  sudo ddrescue -n -v /dev/rdisk4s2 /Volumes/Expansion/omg_backup.img /Volumes/Expansion/omg_backup.log
+  452  hdiutil attach -readonly -nomount /Volumes/Expansion/omg_backup.img
+  453  diskutil list /dev/disk8
+  454  diskutil mount readOnly /dev/disk8
+  455  ls -lah /Volumes/omg
+  456  cd /Volumes/omg
+  457  lash
+  458  ls -lash
+  459  find /Volumes/omg -type f -size 0\nfind /Volumes/omg -type f -size -1k
+  460  mdutil -s /Volumes/omg
+  461  diskutil unmount /Volumes/omg
+  462  diskutil unmount /Volumes/omg
+  463  osascript -e 'tell application "Finder" to close windows'
+  464  diskutil unmount /Volumes/omg
+  465  diskutil unmount /Volumes/omg
+  466  killall Finder
+  467  killall Finder
+  468  diskutil unmount /Volumes/omg
+  469  cd ~
+  470  diskutil unmount /Volumes/omg
+  471  hdiutil detach /dev/disk8
+  472  shasum -a 256 /Volumes/Expansion/omg_backup.img > /Volumes/Expansion/omg_backup.img.sha256
+  473  lash
+  474  ls -lash
+  475  sudo hdiutil create -verbose -srcdevice /dev/rdisk7s2 -format UDZO -imagekey zlib-level=9 -o /Volumes/Expansion/sequoia_backup.dmg
+  476  sudo hdiutil create -verbose -srcdevice /dev/rdisk7s2 -format UDZO -imagekey zlib-level=9 -o /Volumes/Expansion/sequoia_backup.dmg
+  477  diskutil unmountDisk /dev/disk7
+  478  sudo hdiutil create -verbose -srcdevice /dev/rdisk6 -format UDZO -imagekey zlib-level=9 -o /Volumes/Expansion/sequoia_backup.dmg
+  479  hdiutil attach -readonly /Volumes/Expansion/sequoia_backup.dmg
+  480  hdiutil attach -readonly -noverify /Volumes/Expansion/sequoia_backup.dmg
+  481  cd /Volumes/sequoia
+  482  ls -lash
+  483  tree
+  484  clear
+  485  tree -L 2 /Volumes/Sequoia\ HD\ -\ Data
+  486  tree -L 2 /Volumes/Sequoia
+  487  tree -L 4 /Volumes/Sequoia
+  488  clear
+  489  tree -L 3 /Volumes/Sequoia
+  490  pwd
+  491  tree -L 3 /Volumes/Sequoia > ~/sherman.txt
+  492  cat ~/sherman.txt
+  493  clear
+  494  sudo du -sh /Volumes/Sequoia\ HD\ -\ Data/Users/mrg
+  495  diskutil list
+  496  sudo diskutil mount readOnly /dev/disk4s2
+  497  sudo fsck_exfat -n /dev/rdisk4s2
+  498  diskutil unmount force /dev/disk4s2
+  499  sudo fsck_exfat /dev/rdisk4s2
+  500  sudo diskutil mount readOnly /dev/disk4s2
+  501  find /Volumes/omg | wc -l\ndu -sh /Volumes/omg/*
+  502  find /Volumes/omg | wc -l
+  503  diskutil list /dev/disk7
+  504  sudo hdiutil detach /dev/diskX
+  505  diskutil list
+  506  hdiutil info
+  507  mount | grep /Volumes
+  508  volumes
+  509  volume
+  510  mount | grep /Volumes
+  511  hdiutil attach -readonly /Volumes/Expansion/omg_backup.img
+  512  mkdir -p /Volumes/Expansion/newseq_staging\n
+  513  rsync -aHAX --progress "/Volumes/omg/" "/Volumes/Expansion/newseq_staging/"\n
+  514  cat > interrrupto,txt
+  515  clear
+  516  mkdir -p /Volumes/Expansion/newseq_staging\n
+  517  rsync -aHAX --no-xattrs --progress \\n  --exclude=".Trashes" \\n  --exclude=".Spotlight-V100" \\n  --exclude=".fseventsd" \\n  --exclude="._*" \\n  "/Volumes/omg/" "/Volumes/Expansion/newseq_staging/"
+  518  find /Volumes/omg -type f | wc -l
+  519  diff -rq /Volumes/omg /Volumes/Expansion/newseq_staging | grep -vE '^\s*Only in .*: \.(DS_Store|fseventsd|Spotlight|Trashes|VolumeIcon)'
+  520  diff -qr \\n  <(find /Volumes/omg -type f ! -name '._*' | sort) \\n  <(find /Volumes/Expansion/newseq_staging -type f ! -name '._*' | sort)
+  521  ps aux | grep '[f]ind /Volumes'\n
+  522  killall find
+  523  killal sort
+  524  killall sort
+  525  pwd
+  526  cd Expansion
+  527  cd /Volumes/Expansion
+  528  ls
+  529  ls -lash
+  530  diskutil info disk5
+  531  diskutil info disk5s2
+  532  tree -L 1 /Volumes/Expansion > ~/expansion_tree.txt
+  533  cat ~/expansion_tree.txt 
+  534  tree -L 2 /Volumes/Expansion > ~/expansion_tree2.txt
+  535  cat ~/expansion_tree2.txt 
+  536  tree -L 3 /Volumes/Expansion > ~/expansion_tree2.txt
+  537  cat ~/expansion_tree3.txt 
+  538  cat ~/expansion_tree2.txt 
+  539  tree -L 3 /Volumes/Expansion > ~/expansion_tree3.txt
+  540  tree -L 2 /Volumes/Expansion > ~/expansion_tree2.txt
+  541  hdiutil info | grep sequoia_backup
+  542  lsof | grep sequoia_backup
+  543  hdiutil detach /Volumes/sequoia
+  544  hdiutil detach /Volumes/Sequoia\ HD\ -\ Data
+  545  diskutil list
+  546  diskutil mount disk7s2
+  547  ls "/Volumes/Sequoia HD - Data/Users/mrg"
+  548  ls -lash "/Volumes/Sequoia HD - Data/Users/mrg"
+  549  rsync -aHAXN --info=progress2 --dry-run \\n  "/Volumes/Sequoia HD - Data/Users/mrg/" \\n  "/Volumes/Expansion/newseq_staging/"
+  550  rsync -aHAX --info=progress2 --backup --backup-dir="/Volumes/Expansion/rsync_backups/$(date +%Y%m%d_%H%M%S)" \\n  "/Volumes/Sequoia HD - Data/Users/mrg/" \\n  "/Volumes/Expansion/newseq_staging/"
+  551  sudo rm -rf /Volumes/Expansion/newseq_staging/.DS_Store\n
+  552  sudo mdutil -i off /Volumes/Expansion
+  553  sync
+  554  killall Finder
+  555  killall Finder\n
+  556  killall lsd
+  557  ps aux | grep diskutil
+  558  sudo kill -9 46456
+  559  ps aux | grep diskutil
+  560  sudo rm -rf /Volumes/Expansion/.Spotlight-V100\n
+  561  sudo rm -rf /Volumes/Expansion/.fseventsd\n
+  562  sudo rm -rf /Volumes/Expansion/.Trashes\n
+  563  sudo rm -rf /Volumes/Expansion/.DocumentRevisions-V100\n
+  564  sudo rm -rf /Volumes/Expansion/.TemporaryItems
+  565  sudo touch /Volumes/Expansion/.metadata_never_index\n
+  566  sudo mdutil -i off /Volumes/Expansion
+  567  diskutil list
+  568  sudo diskutil unmount /dev/disk5s1
+  569  ls /Volumes
+  570  ls -lh /Volumes/Expansion | head
+  571  sudo mdutil -i off /Volumes/Expansion\n
+  572  sudo touch /Volumes/Expansion/.metadata_never_index
+  573  killall Finder\n
+  574  killall SystemUIServer
+  575  sudo lsof | grep sequoia_backup.002.dmgpart
+  576  mount | grep dmg
+  577  hdiutil info | grep -B 5 sequoia_backup
+  578  sudo fs_usage -f filesys | grep Expansion
+  579  ls -lO /Volumes/Expansion/sequoia_backup.002.dmgpart
+  580  sudo fs_usage -f filesys | grep /Volumes/Expansion
+  581  sudo lsof | grep /Volumes/Expansion
+  582  sudo mdutil -i off /Volumes/Expansion
+  583  sudo mdutil -E /Volumes/Expansion
+  584  killall Finder
+  585  hdiutil detach /Volumes/omg
+  586  sudo lsof | grep /Volumes/Expansion
+  587  sudo mdutil -i off /Volumes/Expansion\n
+  588  sudo launchctl bootout system /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+  589  sudo mdutil -i off /Volumes/Expansion\n
+  590  sudo killall Finder\n
+  591  sudo killall mds mds_stores mdsync\n
+  592  sync\n
+  593  sleep 5\n
+  594  sudo lsof | grep /Volumes/Expansion
+  595  sudo lsof | grep /Volumes/Expansion
+  596  sudo lsof | grep /Volumes/Expansion
+  597  sudo mdutil -i off /Volumes/Expansion\n
+  598  sudo killall mds mds_stores mdsync\n
+  599  sudo lsof | grep /Volumes/Expansion
+  600  sudo touch /Volumes/Expansion/.metadata_never_index\n
+  601  sudo lsof | grep /Volumes/Expansion
+  602  sudo fs_usage -f filesys | grep Expansion
+  603  diskutil unmount /Volumes/Expansion
+  604  diskutil eject /dev/disk5
+  605  sudo diskutil unmount /Volumes/Expansion
+  606  sudo diskutil mountDisk /dev/disk5
+  607  clear
+  608  sudo lsof | grep omg_backup.img
+  609  sudo lsof | grep omg_backup.img
+  610  sudo kill -TERM 3235
+  611  sudo kill -9 3235
+  612  codex
+  613  claude
+  614  cd /Volumes/sequoia_backup/\n
+  615  hdiutil attach -readonly /Volumes/Expansion/sequoia_backup.dmg
+  616  hdiutil attach -readonly -noverify -nobrowse /Volumes/Expansion/sequoia_backup.dmg
+  617  cd /Volumes/sequoia_backup/\n
+  618  hdutil
+  619  cd /Volumes/Sequoia HD - Data
+  620  cd /Volumes/Sequoia HD - Data/
+  621  cd '/Volumes/Sequoia HD - Data/'
+  622  ls -lash
+  623  cd Users
+  624  ls -lash
+  625  cd mrg
+  626  ls -lash
+  627  pwd
+  628  cd /Volumes/SequoiaRO/
+  629  ls -lsh
+  630  history -1000 | grep tree
+  631   tree -L 2 .
+  632   tree -L1 .
+  633  rsync -avun --delete \\n  "/Volumes/omg/bak/ins/" \\n  "/Volumes/Expansion/newseq_staging/bak/ins/"
+  634  rsync -avun --delete \\n  "/Volumes/omg/bak/" \\n  "/Volumes/Expansion/newseq_staging/bak/"
+  635  rsync -avun --delete \\n  "/Volumes/omg/bak/" \\n  "/Volumes/Expansion/newseq_staging/bak/" > drybak.txt
+  636  rsync -avun --delete \\n  --exclude='._*' --exclude='.DS_Store' --exclude='.Spotlight-V100' --exclude='.Trashes' \\n  "/Volumes/omg/bak/" \\n  "/Volumes/Expansion/newseq_staging/bak/"
+  637  rsync -avun --delete \\n  --exclude='._*' --exclude='.DS_Store' --exclude='.Spotlight-V100' --exclude='.Trashes' \\n  "/Volumes/omg/biz/" \\n  "/Volumes/Expansion/newseq_staging/biz/"
+  638  rsync -avun --delete \\n  --exclude='._*' --exclude='.DS_Store' --exclude='.Spotlight-V100' --exclude='.Trashes' \\n  "/Volumes/omg/Clink2/" \\n  "/Volumes/Expansion/newseq_staging/Clink2/"
+  639  rsync -avun --delete \\n  --exclude='._*' --exclude='.DS_Store' --exclude='.Spotlight-V100' --exclude='.Trashes' \\n  "/Volumes/omg/com/" \\n  "/Volumes/Expansion/newseq_staging/com/"
+  640  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/com/" \\n  "/Volumes/Expansion/newseq_staging/com/" \\n  > runcom.txt
+  641  catruncom.txt
+  642  cat runcom.txt
+  643  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/doc/" \\n  "/Volumes/Expansion/newseq_staging/doc/" \\n  > rundoc.txt
+  644  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/fam/" \\n  "/Volumes/Expansion/newseq_staging/fam/" \\n  > runfam.txt
+  645  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/fav/" \\n  "/Volumes/Expansion/newseq_staging/fav/" \\n  > runfav.txt
+  646  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/fin/" \\n  "/Volumes/Expansion/newseq_staging/fin/" \\n  > dryfin.txt
+  647  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/fin/" \\n  "/Volumes/Expansion/newseq_staging/fin/" \\n  > runfin.txt
+  648  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/fit/" \\n  "/Volumes/Expansion/newseq_staging/fit/" \\n  > runfit.txt
+  649  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/fud/" \\n  "/Volumes/Expansion/newseq_staging/fud/" \\n  > runfud.txt
+  650  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/fun/" \\n  "/Volumes/Expansion/newseq_staging/fun/" \\n  > runfun.txt
+  651  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/hw/" \\n  "/Volumes/Expansion/newseq_staging/hw/" \\n  > runhw.txt
+  652  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/hw/" \\n  "/Volumes/Expansion/newseq_staging/hw/" \\n  > dryhw.txt
+  653  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/job/" \\n  "/Volumes/Expansion/newseq_staging/job/" \\n  > dryjob.txt
+  654  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/job/" \\n  "/Volumes/Expansion/newseq_staging/job/" \\n  > runjob.txt
+  655  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/law/" \\n  "/Volumes/Expansion/newseq_staging/law/" \\n  > runlaw.txt
+  656  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/lib/" \\n  "/Volumes/Expansion/newseq_staging/lib/" \\n  > runlib.txt
+  657  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/lrn/" \\n  "/Volumes/Expansion/newseq_staging/lrn/" \\n  > drylrn.txt
+  658  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/lrn/" \\n  "/Volumes/Expansion/newseq_staging/lrn/" \\n  > runlrn.txt
+  659  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/med/" \\n  "/Volumes/Expansion/newseq_staging/med/" \\n  > drymed.txt
+  660  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/med/" \\n  "/Volumes/Expansion/newseq_staging/med/" \\n  > runmed.txt
+  661  rsync -rvun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/Movies/" \\n  "/Volumes/Expansion/newseq_staging/Movies/" \\n  > drymovies.txt
+  662  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  --perms --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r \\n  "/Volumes/omg/Movies/" \\n  "/Volumes/Expansion/newseq_staging/Movies/" \\n  > runmovies.txt
+  663  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/music/" \\n  "/Volumes/Expansion/newseq_staging/music/" \\n  > drymusic.txt
+  664  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/music/" \\n  "/Volumes/Expansion/newseq_staging/music/" \\n  > runmusic.txt
+  665  du -sh /Volumes/Expansion/newseq_staging/music/** | sort -hr | head -n 30
+  666  du -sh /Volumes/Expansion/newseq_staging/music/iTunes/* | sort -hr | head -n 30
+  667  find /Volumes/Expansion/newseq_staging/music/iTunes/iTunes\ U -type f -exec du -sh {} + | sort -hr | head -n 50
+  668  clear
+  669  find /Volumes/Expansion/newseq_staging/music/iTunes/iTunes\ U -type f -exec du -sh {} + | sort -hr | head -n 50
+  670  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  --exclude='.fseventsd' \\n  --exclude='.DocumentRevisions-V100' \\n  --exclude='*/Library/' \\n  --exclude='*/Applications/' \\n  --exclude='*/System/' \\n  --exclude='*/Volumes/' \\n  "/Volumes/omg/My Drive/" \\n  "/Volumes/Expansion/newseq_staging/My Drive/" \\n  > drymydrive.txt
+  671  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/My Drive/" \\n  "/Volumes/Expansion/newseq_staging/My Drive/" \\n  > runmydrive.txt
+  672  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/pic/" \\n  "/Volumes/Expansion/newseq_staging/pic/" \\n  > runpic.txt
+  673  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/Pictures/" \\n  "/Volumes/Expansion/newseq_staging/Pictures/" > drypictures.txt
+  674  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/Pictures/" \\n  "/Volumes/Expansion/newseq_staging/Pictures/" \\n  > runpictures.txt
+  675  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/pix/" \\n  "/Volumes/Expansion/newseq_staging/pix/" \\n  > drypix.txt
+  676  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/pix/" \\n  "/Volumes/Expansion/newseq_staging/pix/" \\n  > runpix.txt
+  677  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/re/" \\n  "/Volumes/Expansion/newseq_staging/re/" \\n  > runre.txt
+  678  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/sci/" \\n  "/Volumes/Expansion/newseq_staging/sci/" \\n  > drysci.txt
+  679  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/sci/" \\n  "/Volumes/Expansion/newseq_staging/sci/" \\n  > runsci.txt
+  680  rsync -avun --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/sec/" \\n  "/Volumes/Expansion/newseq_staging/sec/" \\n  > drysec.txt
+  681  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/sec/" \\n  "/Volumes/Expansion/newseq_staging/sec/" \\n  > runsec.txt
+  682  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/teech/" \\n  "/Volumes/Expansion/newseq_staging/teech/" \\n  > runteech.txt
+  683  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/veh/" \\n  "/Volumes/Expansion/newseq_staging/veh/" \\n  > runveh.txt
+  684  rsync -avun --delete \\n  "/Volumes/omg/wrk/" \\n  "/Volumes/Expansion/newseq_staging/wrk/" > drywrk.txt
+  685  rsync -avu --delete \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/wrk/" \\n  "/Volumes/Expansion/newseq_staging/wrk/" \\n  > runwrk.txt
+  686  rsync -avun --delete --itemize-changes \\n  --exclude='._*' \\n  --exclude='.DS_Store' \\n  --exclude='.Spotlight-V100' \\n  --exclude='.Trashes' \\n  "/Volumes/omg/" \\n  "/Volumes/Expansion/newseq_staging/" \\n  > final_superset_check.txt
+  687  history
+  688  history -100 > myhistory.txt
+  689  diskutil list
+  690  mount | grep "Sequoia HD - Data"
+  691  diskutil unmount "/Volumes/Sequoia HD - Data"
+  692  diskutil unmount "/Volumes/Sequoia HD - Data"
+  693  sudo mkdir -p /Volumes/SequoiaRO
+  694  sudo mount_apfs -o rdonly /dev/disk7s2 /Volumes/SequoiaRO
+  695  diskutil list | grep Sequoia
+  696  mount | grep SequoiaRO
+  697  ls /Volumes/SequoiaRO
+  698  ls /Volumes/SequoiaRO/Users
+  699  ls /Volumes/SequoiaRO/Users/walkerjian
+  700  ls /Volumes/SequoiaRO/Users/mrg
+  701  rsync -av --ignore-existing \\n  "/Volumes/SequoiaRO/Users/mrg/" \\n  "/Volumes/Expansion/newseq_staging/" \\n  > run_seq_safe_merge.txt
+  702  cd /Volumes/SequoiaRO/\n
+  703  find . -type f -exec md5 -r "{}" \; | sort > /tmp/sequoiaRO.md5\n
+  704  clear
+  705  iftop -i en0
+  706  brew install iftop
+  707  ifconfig
+  708  mount | grep '^/dev'
+  709  ls /Volumes
+  710  mount | grep Expansion
+  711  df -h /Volumes/Expansion
+  712  history -1000 | grep tree
+  713  tree -L 2 /Volumes/Expansion
+  714  hdiutil imageinfo /Volumes/Expansion/omg_backup.img
+  715  hdiutil attach /Volumes/Expansion/omg_backup.img
+  716  hdiutil attach -readonly -nomount -noverify -noautofsck /Volumes/Expansion/omg_backup.img
+  717  diskutil list
+  718  sudo file -s /dev/disk5
+  719  sudo fdisk /dev/disk5
+  720  hdiutil detach /dev/disk5\n
+  721  hdiutil attach -readonly -noautofsck -noverify /Volumes/Expansion/omg_backup.img
+  722  sudo iftop -i bridge 0
+  723  sudo iftop -i bridge0
+  724  iftop -i en0
+  725  sudo iftop -i en0
+  726  sudo iftop -i en1
+  727  killall "Disk Utility"\n
+  728  open -a "Disk Utility"
+  729  killall "Disk Utility"\n
+  730  sudo vifs
+  731  sudo diskutil unmount /Volumes/Expansion\n
+  732  diskutil list
+  733  killall "Disk Utility"
+  734  sudo launchctl kickstart -k system/com.apple.diskarbitrationd
+  735  system_profiler SPStorageDataType
+  736  (base) ian@Mac ~ % system_profiler SPStorageDataType\nStorage:\n\n    Data:\n\n      Free: 93.1 GB (93,104,525,312 bytes)\n      Capacity: 245.11 GB (245,107,195,904 bytes)\n      Mount Point: /System/Volumes/Data\n      File System: APFS\n      Writable: Yes\n      Ignore Ownership: No\n      BSD Name: disk3s5\n      Volume UUID: 8FC389D2-AEAB-4931-BE64-52F466AC83BF\n      Physical Drive:\n          Device Name: APPLE SSD AP0256Z\n          Media Name: AppleAPFSMedia\n          Medium Type: SSD\n          Protocol: Apple Fabric\n          Internal: Yes\n          Partition Map Type: Unknown\n          S.M.A.R.T. Status: Verified\n\n    sequoia:\n\n      Free: 163.57 GB (163,571,994,624 bytes)\n      Capacity: 2 TB (2,000,189,177,856 bytes)\n      Mount Point: /Volumes/sequoia\n      File System: APFS\n      Writable: No\n      Ignore Ownership: Yes\n      BSD Name: disk7s1\n      Volume UUID: E4C7647A-9D93-46D6-9343-4FB165780367\n      Physical Drive:\n          Device Name: Samsung SSD 990 PRO 2TB\n          Media Name: AppleAPFSMedia\n          Medium Type: SSD\n          Protocol: PCI-Express\n          Internal: No\n          Partition Map Type: Unknown\n          S.M.A.R.T. Status: Verified\n\n    Sequoia HD - Data:\n\n      Free: 163.57 GB (163,571,994,624 bytes)\n      Capacity: 2 TB (2,000,189,177,856 bytes)\n      Mount Point: /Volumes/Sequoia HD - Data\n      File System: APFS\n      Writable: Yes\n      Ignore Ownership: Yes\n      BSD Name: disk7s2\n      Volume UUID: C6EC5A22-21F5-4ADC-8608-99416E1D5F4A\n      Physical Drive:\n          Device Name: Samsung SSD 990 PRO 2TB\n          Media Name: AppleAPFSMedia\n          Medium Type: SSD\n          Protocol: PCI-Express\n          Internal: No\n          Partition Map Type: Unknown\n          S.M.A.R.T. Status: Verified\n\n    psymin:\n\n      Free: 93.1 GB (93,104,525,312 bytes)\n      Capacity: 245.11 GB (245,107,195,904 bytes)\n      Mount Point: /\n      File System: APFS\n      Writable: No\n      Ignore Ownership: No\n      BSD Name: disk3s1s1\n      Volume UUID: C7F5F923-B290-4324-9545-7A0A8F826085\n      Physical Drive:\n          Device Name: APPLE SSD AP0256Z\n          Media Name: AppleAPFSMedia\n          Medium Type: SSD\n          Protocol: Apple Fabric\n          Internal: Yes\n          Partition Map Type: Unknown\n          S.M.A.R.T. Status: Verified\n\n(base) ian@Mac ~ % 
+  737  mount | grep '^/dev'
+  738  clear
+  739  mount
+  740  ls -lah /Volumes
+  741  mount | grep 'Sequoia HD - Data'
+  742  ls -lah /Volumes/Expansion
+  743  ls -lah /Volumes/Sequoia\ HD\ -\ Data
+  744  sudo killall -HUP Finder diskarbitrationd
+  745  ls -lash
+  746  ls -lash /Volumes
+  747  sudo mkdir -p /Volumes/img_omg\n
+  748  sudo mkdir -p /Volumes/img_sequoia\n
+  749  sudo chown ian:staff /Volumes/img_omg /Volumes/img_sequoia
+  750  hdiutil attach -readonly -noverify -mountpoint /Volumes/img_omg /Volumes/Expansion/omg_backup.img\n
+  751  sudo mdutil -i off /Volumes/img_omg
+  752  mount | grep omg\n
+  753  ls -l /Volumes
+  754  ls -l /Volumes
+  755  hdiutil attach -readonly -noverify -mountpoint /Volumes/img_sequoia /Volumes/Expansion/sequoia_backup.dmg
+  756  hdiutil verify /Volumes/Expansion/sequoia_backup.dmg
+  757  nano .zshrc
+  758  source .zshrc
+  759  alias
+  760  nano .zshrc
+  761  nano .zshrc
+  762  exit
+  763  rsync -aun --delete --checksum /Volumes/img_sequoia/ /Volumes/Sequoia\ HD\ -\ Data/ > ~/Desktop/seq_diff.log
+  764  tail -n 20 ~/Desktop/seq_diff.log
+  765  sync
+  766  hdiutil info 
+  767  diskutil list
+  768  sudo mdutil -i off /Volumes/Expansion\n
+  769  sudo mdutil -E /Volumes/Expansion
+  770  mdutil -s /Volumes/Expansion
+  771  mount | grep Expansion
+  772  killall Finder\nsudo mdutil -i off /Volumes/Expansion
+  773  sudo chflags -R nouchg,noschg /Volumes/Expansion/.Trashes
+  774  sudo chmod -R +w /Volumes/Expansion/.Trashes\n
+  775  sudo rm -rf /Volumes/Expansion/.Trashes/*
+  776  sudo lsof | grep /Volumes/Expansion/.Trashes
+  777  sudo rm -rf /Volumes/Expansion/.Spotlight-V100\n
+  778  sudo rm -rf /Volumes/Expansion/.fseventsd\n
+  779  sudo rm -rf /Volumes/Expansion/.TemporaryItems
+  780  sudo touch /Volumes/Expansion/.metadata_never_index
+  781  diskutil unmount /Volumes/Expansion\ndiskutil mount /dev/disk8s2
+  782  killall Finder\n
+  783  sudo mdutil -i off /Volumes/Expansion
+  784  sudo lsof | grep -i trash
+  785  sudo find /Volumes -type f -name "fav" -o -name "dev"
+  786  exit
+  787  mount | grep /Volumes
+  788  iostat -d 1
+  789  sudo fs_usage -w -f filesys grep
+  790  brew install grep findutils coreutils gnu-sed exiftool binwalk hashdeep fd
+  791  tree -L 2 /Volumes/sequoia
+  792  tree -L 2 /Volumes/sequoia > sequoia2.txt
+  793  file "/Volumes/sequoia/usr/local/go/src/go/internal/gcimporter/testdata/versions/test_go1.11_999b.a"\n
+  794  xxd -l 64 "/Volumes/sequoia/usr/local/go/src/go/internal/gcimporter/testdata/versions/test_go1.11_999b.a"
+  795  pip install --upgrade openai
+  796  codex
+  797  pip install anthropic
+  798   npm install -g @openai/codex
+  799  npm install -g @openai/codex
+  800  sudo npm install -g @openai/codex
+  801  codex
+  802  npm install -g @anthropic-ai/claude-code
+  803  npm install -g @anthropic-ai/claude-code --force --no-os-check
+  804  npm list -g --depth=0
+  805  sudo npm uninstall -g @openai/codex corepack npm
+  806  sudo chown -R $(whoami) /usr/local/lib/node_modules\n
+  807  sudo chown -R $(whoami) /usr/local/bin
+  808  mkdir -p ~/.npm-global
+  809  npm config set prefix "$HOME/.npm-global"
+  810  brew install node
+  811  which npm
+  812  npm -v
+  813  npm config set prefix "$HOME/.npm-global"\n
+  814  echo 'export PATH="$HOME/.npm-global/bin:$PATH"' >> ~/.zshrc
+  815  source ~/.zshrc
+  816  npm install -g @openai/codex
+  817  codex
+  818  history -d
+  819  history -100
